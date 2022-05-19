@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --green: #388448;
+    --gray: #333a40;
+    --green-button: #29a745;
+    --light-gray: #808387;
+    --white: #ffffff;
+    --d-gray: #353a40;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nav-logo{
+    display: flex;
+}
+
+.nav-logo img{
+    width: 150px;
+}
+
+.navegador{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px 10px 90px;
+    background-color: var(--gray);
+    align-items: center;
+    height: 80px;
+}
+
+.nav-left{
+    display: flex;
+    color: var(--white);
+    align-items: center;
+    font-size: 23px;
+
+ }
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-right: 90px;
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: var(--light-gray);
+}
+
+.img-codo {
+    width: 120px;
+
+}
+
+.nav-left p{
+    margin: 0;
+}
+.comprar-tickets{
+    color: var(--green);
+}
+
+.nav-option:hover{
+    color: white;
+}
+
+.comprar-tickets:hover{
+    color: rgb(8, 199, 8)
+}
+
+
+.card-group{
+    display: flex;
+    gap: 10px;
+    border-left: 1;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+.card-group>.card+.card{
+    border-left: 1px solid rgb(9, 142, 160);
+}
+
+.cantidad_categoria{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5px;
+}
+
+.cantidad_categoria div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+    
+}
+
+.formulario_venta{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    
+}
+
+.formulario{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.total_pagar{
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.301);
+    height: 50px;
+    color: blue;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-top: 30px;
+    text-align: justify;
+    padding: 11px;
+}
+
+.nombre_apellido{
+    display: flex;
+    justify-content: space-between;
+    gap:5px;
+}
+
+
+.correo{
+    width: 100%;
+    margin-top: 8px;
+    
+}
+
+.nombre{
+    width: 50%;
+}
+.apellido{
+    width: 50%;
+}
+
+.cantidad{
+    width: 100%;
+}
+
+.categoria{
+    width: 49%;
+}
+
+.card{
+    text-align: center;
+}
+
+.borrar{
+    width: 50%;
+    background-color:rgba(130, 196, 33, 0.993);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+}
+.resumen{
+    width: 50%;
+    background-color: rgba(130, 196, 33, 0.993);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+}
+
+.button{
+   display: flex;
+   gap: 5px;
+   height: 40px;
+   width: 60%;
+   margin: 20px auto 0 auto;
+
+   
+}
+
+input{
+    padding: 5px 10px;
+    /* font-size: 10px; */
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+}
+
+select{
+    font-size: 15px;
+    height: 36px;
+    padding-left: 5px;
+    border-radius: 4px;
+}
+
+label{
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.total_pagar{
+    display: flex;
+    gap:10px
+}
+
+
+
+
+
+
+
+
+
+
+.footermenu{
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    padding: 10px;
+    
+
+}
+
+.footermenu a{
+    text-decoration: none;
+    color:var(--white);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+footer{
+    background: linear-gradient(90deg,#1a3644, #1d506d);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 0;
+    
+}
+
+
+
+@media only screen and (min-width:1500px){
+    body{
+        height: 100vh;
+        justify-content: space-between;
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+}
